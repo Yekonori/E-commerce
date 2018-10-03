@@ -7,12 +7,14 @@
 	<meta author="Nicolas DISANT & Yannis DE MACEDO">
 	<meta keyword="E-commerce, Meubles, &Eacute;clairage, Jouets">
 	<meta generator="Wordpress">
-	<!-- <link href="/" type="text/css" rel="stylesheet" /> -->
+	<link rel = "stylesheet" href = "assets/css/reset.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <link rel = "stylesheet" href = "assets/css/index.css">
 </head>
 <body>
     <header>
         <section class="section-search">
-            <img src="../assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
+            <img src="assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
             <form method="get" action="#" class="search-form">
                 <input type = "text" placeholder="Rechercher">
                 <select id="select-categories">
@@ -31,7 +33,7 @@
                 <ul>
                     <li><a href="#" hreflang="fr">Me connecter</a> / <a href="#" hreflang="fr">S'inscrire</a></li>
                     <li class="shopping-cart">
-                        <img src="../assets/img/shopping-cart.png" alt="Votre Panier" title="Votre Panier">
+                        <img src="assets/img/shopping-cart.png" alt="Votre Panier" title="Votre Panier">
                         <p>0.00€</p>
                     </li>
                 </ul>
@@ -73,49 +75,49 @@
     </header>
     <main>
         <section>
-            <img src="#" alt="Chaise en bois" title="Notre meilleure vente">
+            <img src="assets/img/img_fond.png" width="100%" alt="Chaise en bois" title="Notre meilleure vente">
         </section>
         <section>
-            <p>
+            <p class="subtext">
                 Collections Woodmart
             </p>
-            <h1>
+            <h1 class="index_h1">
                 Catégories vedettes
             </h1>
-            <h2>
+            <h2 class="index_h2">
                 Proin quam velit, feugiat quis lectus id, gravida.
             </h2>
-            <ul>
-                <li>
+            <ul class="categoryList">
+                <li class="bigPicture">
                     <a href="#" hreflang="fr">
-                        Meubles
+                        <img src="assets/img/index_meubles.png" alt="Image de Chaisse" title="Venez voir nos meubles !">
                     </a>
                 </li>
-                <li>
+                <li class="smallPicture">
                     <a href="#" hreflang="fr">
                         Horloges
                     </a>
                 </li>
-                <li>
+                <li class="smallPicture">
                     <a href="accessories.html">
                         Accessoires
                     </a>
                 </li>
-                <li>
+                <li class="smallPicture">
                     <a href="#" hreflang="fr">
                         &Eacute;clairages
                     </a>
                 </li>
-                <li>
+                <li class="smallPicture">
                     <a href="#" hreflang="fr">
                         Jouets
                     </a>
                 </li>
             </ul>
-            <h1>
+            <h1  class="index_h1">
                 Produits vedettes
             </h1>
-            <h2>
+            <h2 class="index_h2">
                 Proin quam velit, feugiat quis lectus id, gravida.
             </h2>
             <article>
@@ -141,19 +143,20 @@
                 <p>15€</p>
             </article>
         </section>
-        <section>
+        <section class="newsletter">
             <h3>
                 Inscrivez-vous à la newsletter
             </h3>
             <form action="#" method="post">
                 <label for="email">Adresse Mail: </label>
                 <input type="email" name="email" placeholder="Votre adresse mail" required>
+                <input type="submit" value="S'inscrire">
             </form>
         </section>
     </main>
     <footer>
         <div class="address">
-            <img src="../assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
+            <img src="assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
             <p>
                 Condimentum adipiscing vel neque dis nam <br> parturient orci at scelerisque neque dis nam <br> parturient.
             </p>
@@ -167,7 +170,7 @@
             <h4>Articles récents</h4>
             <article>
                 <a href="#" hreflang="fr">
-                    <img src="../assets/img/sleeping.jpg" alt="Photo d'une chambre avec lit" title="Image de l'article">
+                    <img src="assets/img/sleeping.jpg" alt="Photo d'une chambre avec lit" title="Image de l'article">
                 </a>
                 <div>
                     <h1>Un compagnon pour mieux <br> dormir</h1>
@@ -178,7 +181,7 @@
             <hr>
             <article>
                 <a href="#" hreflang="fr">
-                    <img src = "../assets/img/seating_inspiration.jpg" alt="Photo d'une cuisine avec chaise" title="Image de l'article">
+                    <img src = "assets/img/seating_inspiration.jpg" alt="Photo d'une cuisine avec chaise" title="Image de l'article">
                 </a>
                 <div>
                     <h1>Inspiration siège <br> d'éxterieur</h1>
