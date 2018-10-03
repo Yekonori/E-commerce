@@ -80,7 +80,6 @@ nav ul li > ul {
 nav ul li > ul li {
     padding: 10px 10px;
     min-width: 150px;
-    wrap-space: no-wrap;
 }
 /* END DROPDOWN NAV */
 
@@ -152,7 +151,7 @@ section.wrapper{
 }
 
 .faq h1,
-.contact_us h1{
+.contact_us h1 {
     font-size: 22px;
     margin-bottom: 30px;
     font-family: Poppins,sans-serif !important;
