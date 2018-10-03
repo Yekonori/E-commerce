@@ -7,12 +7,15 @@
 	<meta author="Nicolas DISANT & Yannis DE MACEDO">
 	<meta keyword="E-commerce, Meubles, &Eacute;clairage, Jouets">
 	<meta generator="Wordpress">
-	<!-- <link href="/" type="text/css" rel="stylesheet" /> -->
+    <link rel = "stylesheet" href = "assets/css/reset.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
 </head>
 <body>
     <header>
         <section class="section-search">
-            <img src="../assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
+            <a href = "index.html">
+                <img src="assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
+            </a>
             <form method="get" action="#" class="search-form">
                 <input type = "text" placeholder="Rechercher">
                 <select id="select-categories">
@@ -31,7 +34,7 @@
                 <ul>
                     <li><a href="#" hreflang="fr">Me connecter</a> / <a href="#" hreflang="fr">S'inscrire</a></li>
                     <li class="shopping-cart">
-                        <img src="../assets/img/shopping-cart.png" alt="Votre Panier" title="Votre Panier">
+                        <img src="assets/img/shopping-cart.png" alt="Votre Panier" title="Votre Panier">
                         <p>0.00€</p>
                     </li>
                 </ul>
@@ -71,110 +74,138 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h1>
-                Accessoires
-            </h1>
-            <ul>
-                <li>
-                    <a href="#" hreflang="fr">Horloges</a>
-                </li>
-                <li>
-                    <a href="#" hreflang="fr">&Eacute;clairages</a>
-                </li>
-                <li>
-                    <a href="#" hreflang="fr">Meubles</a>
-                </li>
-                <li>
-                    <a href="#" hreflang="fr">Accessoires</a>
-                </li>
-                <li>
-                    <a href="#" hreflang="fr">Jouets</a>
-                </li>
-            </ul>
-        </section>
-        <aside>
-            <div>
-                <h2>
-                    Trier par prix
-                </h2>
-                <form action="#" method="post">
-                    <div data-role="rangeslider">
-                      <label for="price">Prix : </label>
-                      <input type="range" name="price" id="price" value="200" min="0" max="1000">
-                    </div>
-                </form>
-            </div>
-            <div>
-                <h2>
-                    Trier par couleur
-                </h2>
+        <section class="nav-categories-shop">
+            <h1>Accessoires</h1>
+            <nav>
                 <ul>
                     <li>
-                        <a href="#" hreflang="fr">Beige</a>
+                        <a href="#" hreflang="fr">Horloges</a>
+                        <p>12 produits</p>
                     </li>
                     <li>
-                        <a href="#" hreflang="fr">Blanc</a>
+                        <a href="#" hreflang="fr">&Eacute;clairages</a>
+                        <p>16 produits</p>
                     </li>
                     <li>
-                        <a href="#" hreflang="fr">Noir</a>
+                        <a href="#" hreflang="fr">Meubles</a>
+                        <p>22 produits</p>
+                    </li>
+                    <li>
+                        <a href="#" hreflang="fr">Accessoires</a>
+                        <p>12 produits</p>
+                    </li>
+                    <li>
+                        <a href="#" hreflang="fr">Cuisine</a>
+                        <p>12 produits</p>
+                    </li>
+                    <li>
+                        <a href="#" hreflang="fr">Jouets</a>
+                        <p>12 produits</p>
                     </li>
                 </ul>
-            </div>
-            <div>
-                    <h2>
-                        Trier par marque
-                    </h2>
+            </nav>
+        </section>
+        <div class="container-wrapper">
+            <aside class="filter-aside">
+                <div class="filter-by-price">
+                    <h2>Trier par prix</h2>
+                    <form action="#" method="post">
+                        <div data-role="rangeslider">
+                            <label for="price">Prix : </label>
+                            <input type="range" name="price" id="price" value="200" min="0" max="1000">
+                        </div>
+                        <input type = "submit" value="Filtrer">
+                    </form>
+                </div>
+                <div class="filter-by-color" >
+                    <h2>Trier par couleur</h2>
+                    <ul>
+                        <li>
+                            <span class="color beige"></span>
+                            <div>
+                                <a href="#" hreflang="fr">Beige</a>
+                                <span>2</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="color gray"></span>
+                            <div>
+                                <a href="#" hreflang="fr">Gris</a>
+                                <span>2</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="color black"></span>
+                            <div>
+                                <a href="#" hreflang="fr">Noir</a>
+                                <span>2</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-by-brand">
+                    <h2>Trier par marque</h2>
                     <ul>
                         <li>
                             <a href="#" hreflang="fr">
-                                <img src="#" alt="Rolex" title="Marque Rolex">
+                                <img src="assets/img/evasolo.png" alt="Eva Solo" title="Marque Eva-solo">
                             </a>
                         </li>
                         <li>
                             <a href="#" hreflang="fr">
-                                <img src="#" alt="Alessi" title="Marque Alessi">
+                                <img src="assets/img/alessi.png" alt="Alessi" title="Marque Alessi">
                             </a>
                         </li>
                         <li>
                             <a href="#" hreflang="fr">
-                                <img src="#" alt="Flos" title="Marque Flos">
+                                <img src="assets/img/floss.png" alt="Floss" title="Marque Floss">
                             </a>
                         </li>
                     </ul>
                 </div>
-        </aside>
-        <section>
-            <article>
-                <img src="#" alt="Table en Bois" title="Table en Bois">
-                <a href="#" class="article_name">Table en bois</a>
-                <a href="#" class="article_categorie">Meuble</a>
-                <p>250€</p>
-            </article>
-            <article>
-                <img src="#" alt="Dock pour Smartphone" title="Dock pour Smartphone">
-                <a href="product.html" class="article_name">Dock pour Smartphone</a>
-                <a href="accessories.html" class="article_categorie">Accessoire</a>
-                <p>23.50€</p>
-            </article>
-            <article>
-                <img src="#" alt="Chaise Longue" title="Chaise Longue">
-                <a href="#" class="article_name">Chaise longue</a>
-                <a href="#" class="article_categorie">Meuble</a>
-                <p>375€</p>
-            </article>
-            <article>
-                <img src="#" alt="Horloge en Bois" title="Horloge en Bois">
-                <a href="#" class="article_name">Horloge en bois</a>
-                <a href="#" class="article_categorie">Horloge</a>
-                <p>15€</p>
-            </article>
-        </section>
+            </aside>
+            <section class="list-product-accessories">
+                <article>
+                    <a href = "#">
+                        <img src="assets/img/clock.jpg" alt="Image d'une montre en Bois" title="Montre en Bois">
+                    </a>
+                    <a href="#" hreflang="fr" class="article_name">Montre intelligente édition bois</a>
+                    <a href="#" hreflang="fr" class="article_categorie">Montre, Accessoire</a>
+                    <p>250€</p>
+                </article>
+                <article>
+                    <a href = "#">
+                        <img src="assets/img/product-accessories-1-2.jpg" alt="Image d'une cravate en bois" title="Cravate en bois">
+                    </a>
+                    <a href="product.html" hreflang="fr" class="article_name">Cravate en bois</a>
+                    <a href="accessories.html" hreflang="fr" class="article_categorie">Accessoire</a>
+                    <p>23.50€</p>
+                </article>
+                <article>
+                    <a href = "#">
+                        <img src="assets/img/candle.jpg" alt="Image d'une bougie en forme de bouteil de vin" title="Bougie">
+                    </a>
+                    <a href="#" hreflang="fr" class="article_name">Bougie en bouteil de vin</a>
+                    <a href="#" hreflang="fr" class="article_categorie">Accessoire</a>
+                    <p>375€</p>
+                </article>
+                <article>
+                    <a href = "#">
+                        <img src="assets/img/product-accessories-10-2.jpg" alt="Image d'un presse citron en bois avec du citron" title="Presse citron en bois">
+                    </a>
+                    <a href="#" hreflang="fr" class="article_name">Presse citron en bois</a>
+                    <a href="#" hreflang="fr" class="article_categorie">Accessoire</a>
+                    <p>15€</p>
+                </article>
+            </section>
+        </div>
     </main>
+
     <footer>
         <div class="address">
-            <img src="../assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
+            <img src="assets/img/wood-logo-dark.svg" alt="" title="Logo woodmart">
             <p>
                 Condimentum adipiscing vel neque dis nam <br> parturient orci at scelerisque neque dis nam <br> parturient.
             </p>
@@ -188,7 +219,7 @@
             <h4>Articles récents</h4>
             <article>
                 <a href="#" hreflang="fr">
-                    <img src="../assets/img/sleeping.jpg" alt="Photo d'une chambre avec lit" title="Image de l'article">
+                    <img src="assets/img/sleeping.jpg" alt="Photo d'une chambre avec lit" title="Image de l'article">
                 </a>
                 <div>
                     <h1>Un compagnon pour mieux <br> dormir</h1>
@@ -199,7 +230,7 @@
             <hr>
             <article>
                 <a href="#" hreflang="fr">
-                    <img src = "../assets/img/seating_inspiration.jpg" alt="Photo d'une cuisine avec chaise" title="Image de l'article">
+                    <img src = "assets/img/seating_inspiration.jpg" alt="Photo d'une cuisine avec chaise" title="Image de l'article">
                 </a>
                 <div>
                     <h1>Inspiration siège <br> d'éxterieur</h1>
