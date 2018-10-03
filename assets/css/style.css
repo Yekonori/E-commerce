@@ -58,3 +58,83 @@ footer div article img{margin-right: 10px;}
 footer div article div{margin: 0;}
 footer div article div h1{margin-bottom : 8px;}
 footer div article div p{display : inline-block;}
+
+
+/* Page contact */
+section.wrapper{
+    display : flex;
+    align-items: center;
+    justify-content : center;
+    width: 95%;
+}
+.faq,
+.contact_us{
+    margin-top: 50px;
+}
+
+.faq{
+    margin-right: 57px;
+    border-right: 1px solid #cecece;
+    padding-right: 50px;
+}
+.faq details {
+    position: relative;
+    overflow : hidden;
+}
+
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq details summary::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=")
+    no-repeat 50% 0 / 1em 1em;
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.1s linear;
+}
+
+.faq summary {
+    width         : 100%;
+    padding       : 20px 20px 20px 25px;
+    border-bottom : 1px solid #ccc;
+}
+.faq details:first-of-type summary {
+    border-top : 1px solid #ccc;
+}
+
+.faq summary:hover {
+    color: #83b735;
+}
+
+.faq summary:focus {
+    outline: none;
+}
+
+.faq details[open] summary:before {
+    transform: rotate(90deg);
+    background-position: 0 0;
+}
+
+.faq details[open] > summary {
+    color: #83b735;
+}
+
+.faq details[open] > summary ~ * {
+    animation: open 1s ease;
+}
+.faq details p{
+    padding-left: 25px;
+    padding-top:15px;
+}
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
