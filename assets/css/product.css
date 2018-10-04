@@ -1,0 +1,138 @@
+.product_h1,
+.product_h2 {
+    font-size: 22px;
+    margin-bottom:25px;
+    font-family: Poppins,sans-serif !important;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.product_presentation {
+    display:grid;
+    grid-template-columns: 10vw 37vw 30vw;
+    grid-column-gap:1vw;
+    justify-content:center;
+    margin-bottom:10vh;
+}
+
+.product_presentation .product_image_list {
+    display:grid;
+    grid-row-gap:2vh;
+}
+
+.product_presentation .product_image_list img,
+.product_presentation figure img {
+    width:100%;
+}
+
+.product_presentation h1 {
+    font-size:32px;
+    margin-top:6vh;
+}
+
+.product_presentation span {
+    color:#83b735;
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:0.05em;
+}
+
+.product_presentation p {
+    color:#8e8b8b;
+    line-height:1.8em;
+    font-size:14px;
+    text-align:justify;
+    margin-top:8vh;
+}
+
+.description {
+    border-top:1px solid #c7c4c4;
+    border-bottom:1px solid #c7c4c4;
+    text-align:center;
+    padding:8vh 0;
+}
+
+.description h2 {
+    margin-bottom:6vh;
+}
+
+.description > div {
+    display: inline-grid;
+    grid-template-columns:45vw 45vw;
+    grid-column-gap:5vw;
+    justify-content:center;
+}
+
+.description > div > div:nth-child(odd) {
+    line-height:1.5em;
+    letter-spacing:0.05em;
+}
+
+.description > div > div:nth-child(odd) p {
+    text-align:justify;
+    color:#4e4b4b;
+}
+
+.description > div > div:nth-child(odd) blockquote {
+    padding:2vh 0;
+    border-left:2px solid #83b735;
+}
+
+.description > div > div:nth-child(even) ul {
+    display:inline-grid;
+    grid-template-columns:40% 40%;
+    grid-gap:5vh 3vw;
+}
+
+.description > div > div:nth-child(even) ul li {
+    list-style:none;
+    font-weight:bold;
+    text-align:center;
+    line-height:1.5em;
+}
+
+.description > div > div:nth-child(even) ul li svg {
+    width:15%;
+    margin-bottom:3vh;
+}
+
+.list-product h3 {
+    font-size: 22px;
+    margin-bottom:25px;
+    font-family: Poppins,sans-serif !important;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+    margin:8vh auto;
+}
+
+.list-product article{
+    display: inline-block;
+    width: 34%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-product article:nth-child(even) {
+    margin-left:15.5vw;
+}
+
+.list-product article img{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.list-product article a{display : block;}
+.list-product article a.article_name{
+    margin-bottom: 5px;
+    font-family: Poppins, sans-serif !important;
+    color : #333;
+}
+.list-product article a.article_categorie{
+    color : #9E9E9E;
+    margin-bottom: 5px;
+    font-size : 14px;
+}
+.list-product article p{
+    color : #83b735;
+}
