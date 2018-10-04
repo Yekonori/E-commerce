@@ -27,8 +27,9 @@
 .categoryList {
     display:inline-grid;
     grid-template-columns:auto auto auto;
-    grid-gap: 50px 100px;
-    margin:0 auto;
+    grid-gap:5vh 2vw;
+    margin-bottom:20vh;
+    margin-left:13vw;
 }
 
 .bigPicture {
@@ -37,6 +38,40 @@
 
 .bigPicture img {
     height:75vh;
+}
+
+.smallPicture img {
+    height:35vh;
+}
+
+.list-product article{
+    display: inline-block;
+    width: 34%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-product article:nth-child(odd) {
+    margin-left:15.5vw;
+}
+
+.list-product article img{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.list-product article a{display : block;}
+.list-product article a.article_name{
+    margin-bottom: 5px;
+    font-family: Poppins, sans-serif !important;
+    color : #333;
+}
+.list-product article a.article_categorie{
+    color : #9E9E9E;
+    margin-bottom: 5px;
+    font-size : 14px;
+}
+.list-product article p{
+    color : #83b735;
 }
 
 .newsletter {
